@@ -1,70 +1,64 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ЕКО токен</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-image: url('cover.png'); /* Увери се, че снимката се казва така */
+    }
+
+    .hero {
+      background-image: url('Cover.png');
       background-size: cover;
       background-position: center;
-      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       color: white;
       text-align: center;
     }
 
-    header {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 40px 20px;
-    }
-
-    header h1 {
-      font-size: 48px;
-      margin: 0;
-    }
-
-    header p {
-      font-size: 20px;
-      margin-top: 10px;
-    }
-
     nav {
       background-color: rgba(0, 0, 0, 0.7);
-      padding: 10px;
+      padding: 10px 0;
     }
 
     nav a {
-      color: #00ffe1;
+      color: cyan;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
 
-    section {
-      margin-top: 50px;
+    .download {
+      margin: 50px auto;
+      text-align: center;
     }
 
-    .button {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 12px 24px;
-      background-color: #00ffe1;
+    .download a {
+      background-color: #00e0e0;
       color: black;
       text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 10px;
       font-weight: bold;
-      border-radius: 5px;
+    }
+
+    .download a:hover {
+      background-color: #00bcbc;
     }
   </style>
 </head>
 <body>
-
-  <header>
+  <div class="hero">
     <h1>ЕКО токен</h1>
     <p>Бъдещето на устойчивата криптовалута</p>
-  </header>
+  </div>
 
   <nav>
     <a href="#">Начало</a>
@@ -72,9 +66,8 @@
     <a href="#">Контакти</a>
   </nav>
 
-  <section>
-    <a class="button" href="EKO_Token_Бяла книга.pdf" download>Изтегляне на информационния документ</a>
-  </section>
-
+  <div class="download">
+    <a href="EKO_Token_Бяла книга.pdf" download>Изтегляне на информационния документ</a>
+  </div>
 </body>
 </html>
