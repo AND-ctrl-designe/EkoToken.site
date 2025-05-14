@@ -9,7 +9,6 @@
       font-family: Arial, sans-serif;
       background-color: #000;
       color: white;
-      text-align: center;
     }
 
     .hero {
@@ -21,22 +20,31 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      color: white;
+      text-align: center;
       padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-top: 10px;
     }
 
     nav {
       background-color: #333;
       padding: 15px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
+      text-align: center;
     }
 
     nav a {
       color: cyan;
       text-decoration: none;
       font-weight: bold;
+      margin: 0 15px;
     }
 
     .button {
@@ -47,19 +55,30 @@
       font-weight: bold;
       border-radius: 8px;
       display: inline-block;
-      margin-top: 30px;
+      margin: 40px auto;
+      text-align: center;
     }
 
-    .contact {
-      margin: 50px 0;
-      font-size: 18px;
+    footer {
+      background-color: #222;
+      text-align: center;
+      padding: 20px;
+      font-size: 16px;
+      color: #aaa;
+    }
+
+    footer a {
+      color: #00e6e6;
+      text-decoration: none;
     }
 
     @media (max-width: 768px) {
-      .hero {
-        background-position: top;
-        height: auto;
-        padding: 60px 20px;
+      .hero h1 {
+        font-size: 2em;
+      }
+
+      .hero p {
+        font-size: 1em;
       }
     }
   </style>
@@ -77,11 +96,15 @@
     <a href="mailto:ekotoken@tutamail.com">Контакти</a>
   </nav>
 
-  <a class="button" href="EKO_Token_Бяла книга.pdf" download>Изтегляне на информационния документ</a>
-
-  <div class="contact">
-    Свържете се с нас: <a href="mailto:ekotoken@tutamail.com" style="color:#00e6e6;">ekotoken@tutamail.com</a>
+  <div style="text-align:center;">
+    <a class="button" href="EKO_Token_Бяла книга.pdf" download>
+      Изтегляне на информационния документ
+    </a>
   </div>
+
+  <footer>
+    Свържете се с нас: <a href="mailto:ekotoken@tutamail.com">ekotoken@tutamail.com</a>
+  </footer>
 
 </body>
 </html>
