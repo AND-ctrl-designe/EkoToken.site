@@ -1,66 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ЕКО токен</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: black;
+      background-image: url('cover.png'); /* Увери се, че снимката се казва така */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       color: white;
       text-align: center;
     }
-    .hero {
-      background: url('файл_00000000a6c86246a5d1ba87283564d1.png') center center no-repeat;
-      background-size: cover;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+
+    header {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px 20px;
     }
-    h1 {
+
+    header h1 {
       font-size: 48px;
       margin: 0;
     }
-    p {
+
+    header p {
       font-size: 20px;
       margin-top: 10px;
     }
+
     nav {
-      margin-top: 30px;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px;
     }
+
     nav a {
+      color: #00ffe1;
       margin: 0 15px;
-      color: #00ffe7;
       text-decoration: none;
       font-weight: bold;
     }
-    nav a:hover {
-      text-decoration: underline;
+
+    section {
+      margin-top: 50px;
     }
-    .download {
-      margin-top: 40px;
-    }
-    .download a {
-      color: #00ffe7;
-      font-size: 18px;
-      text-decoration: underline;
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #00ffe1;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
     }
   </style>
 </head>
 <body>
-  <div class="hero">
+
+  <header>
     <h1>ЕКО токен</h1>
     <p>Бъдещето на устойчивата криптовалута</p>
-    <nav>
-      <a href="#">Начало</a>
-      <a href="#">Пътна карта</a>
-      <a href="#">Контакти</a>
-    </nav>
-    <div class="download">
-      <a href="EKO_Token_Бяла книга.pdf" download>Изтегляне на информационния документ</a>
-    </div>
-  </div>
+  </header>
+
+  <nav>
+    <a href="#">Начало</a>
+    <a href="#">Пътна карта</a>
+    <a href="#">Контакти</a>
+  </nav>
+
+  <section>
+    <a class="button" href="EKO_Token_Бяла книга.pdf" download>Изтегляне на информационния документ</a>
+  </section>
+
 </body>
 </html>
