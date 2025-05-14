@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>ЕКО токен</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      background-color: #000;
+      color: white;
+      text-align: center;
     }
 
     .hero {
@@ -15,51 +17,71 @@
       background-size: cover;
       background-position: center;
       height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 20px;
     }
 
     nav {
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 10px 0;
-      text-align: center;
+      background-color: #333;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
     }
 
     nav a {
       color: cyan;
-      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
 
-    .download {
-      margin: 50px auto;
-      text-align: center;
-    }
-
-    .download a {
-      background-color: #00e0e0;
+    .button {
+      background-color: #00e6e6;
       color: black;
+      padding: 15px 25px;
       text-decoration: none;
-      padding: 15px 30px;
-      border-radius: 10px;
       font-weight: bold;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 30px;
     }
 
-    .download a:hover {
-      background-color: #00bcbc;
+    .contact {
+      margin: 50px 0;
+      font-size: 18px;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        background-position: top;
+        height: auto;
+        padding: 60px 20px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="hero"></div>
+
+  <div class="hero">
+    <h1>ЕКО токен</h1>
+    <p>Бъдещето на устойчива криптовалута</p>
+  </div>
 
   <nav>
     <a href="#">Начало</a>
     <a href="#">Пътна карта</a>
-    <a href="#">Контакти</a>
+    <a href="mailto:ekotoken@tutamail.com">Контакти</a>
   </nav>
 
-  <div class="download">
-    <a href="EKO_Token_Бяла книга.pdf" download>Изтегляне на информационния документ</a>
+  <a class="button" href="EKO_Token_Бяла книга.pdf" download>Изтегляне на информационния документ</a>
+
+  <div class="contact">
+    Свържете се с нас: <a href="mailto:ekotoken@tutamail.com" style="color:#00e6e6;">ekotoken@tutamail.com</a>
   </div>
+
 </body>
 </html>
