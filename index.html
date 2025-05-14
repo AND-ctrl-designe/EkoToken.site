@@ -16,22 +16,6 @@
       background-size: cover;
       background-position: center;
       height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .hero h1 {
-      font-size: 3em;
-      margin: 0;
-    }
-
-    .hero p {
-      font-size: 1.2em;
-      margin-top: 10px;
     }
 
     nav {
@@ -73,22 +57,16 @@
     }
 
     @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2em;
-      }
-
-      .hero p {
-        font-size: 1em;
+      nav a {
+        display: block;
+        margin: 10px 0;
       }
     }
   </style>
 </head>
 <body>
 
-  <div class="hero">
-    <h1>ЕКО токен</h1>
-    <p>Бъдещето на устойчива криптовалута</p>
-  </div>
+  <div class="hero"></div>
 
   <nav>
     <a href="#">Начало</a>
